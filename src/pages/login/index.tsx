@@ -63,9 +63,9 @@ const Login = () => {
         </Form.Item>
 
         <div className={styles.popover}>
-          <Popover placement="topLeft" content={content} trigger="click">
-            <Button type="link">如何获取登录账号？</Button>
-          </Popover>
+          {/* <Popover placement="topLeft" content={content} trigger="click"> */}
+          <Button type="link" onClick={() => history.push('/register')}>注册账号</Button>
+          {/* </Popover> */}
         </div>
 
         <Form.Item {...tailLayout}>

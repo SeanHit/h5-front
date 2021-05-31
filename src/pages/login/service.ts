@@ -1,13 +1,6 @@
 import req from '@/utils/req';
+import { User } from '../types';
 
-interface User {
-    name: string;
-    password?: string;
-    start_time: number;
-    create_time: number;
-    end_time: number;
-    update_time: number
-}
 
 interface LoginRes {
     code: number;
